@@ -1,27 +1,36 @@
 # Hava Durumu Uygulaması
 
-Bu proje, OpenWeather API kullanarak dünya genelindeki şehirlerin ve ülkelerin hava durumunu hızlı ve verimli bir şekilde sorgulamanızı sağlayan bir hava durumu uygulamasıdır. Kullanıcı dostu arayüzü sayesinde, herhangi bir şehir veya ülke adını aratarak, anlık hava durumu bilgilerine ve ülke bazında hava durumu ortalamalarına ulaşabilirsiniz.
+Bu uygulama, OpenWeather API'sini kullanarak dünya genelindeki şehirlerin hava durumu bilgilerini görüntülemenizi sağlar. Şehir adı girerek hava durumu bilgilerine ulaşabilir ve ülke genelindeki hava durumu ortalamalarını görebilirsiniz.
 
 ## Özellikler
 
-- **Şehir Hava Durumu:** Şehir adı girerek anlık hava durumu, sıcaklık, nem oranı ve hava durumu açıklamalarını görüntüleyin.
-- **Ülke Ortalama Hava Durumu:** Belirli bir ülkenin genel hava durumu ortalamalarını öğrenin.
-- **Kullanıcı Dostu Arayüz:** Kolay kullanımlı arama çubuğu ve net görsel düzen.
-- **Hızlı ve Güvenilir:** OpenWeather API aracılığıyla hızlı veri çekimi ve güncelleme.
+- Şehir bazında hava durumu bilgileri
+- Ülke genelinde hava durumu ortalamaları
+- Hava durumu simgeleri ve detayları
+- Kullanıcı dostu arayüz
 
-## Teknolojiler
+## Ara Yüz
 
-- **HTML:** Sayfa yapısı ve içerik düzenlemesi için kullanılmıştır.
-- **CSS:** Stil ve düzenleme işlemleri için kullanılmıştır.
-- **JavaScript:** API'dan veri çekme ve kullanıcı arayüzünü dinamik olarak güncelleme işlemleri için kullanılmıştır.
-- **OpenWeather API:** Hava durumu verilerini sağlamak için kullanılan API.
+### Arama Çubuğu
 
-## Kullanım
+Kullanıcılar, şehir veya ülke adını arama çubuğuna girerek hava durumu bilgilerini hızlıca sorgulayabilirler.
 
-1. **API Anahtarını Alın:**
-   [OpenWeather](https://openweathermap.org/api_keys) web sitesine gidin ve bir API anahtarı alın. API anahtarınızı almak için siteye kaydolmanız gerekebilir. 
+![Arama Çubuğu Ekran Görüntüsü](https://github.com/user-attachments/assets/dac7ce38-a282-4b5d-98cd-4013e4d92fd2)
 
-2. **API Anahtarınızı Yapılandırın:**
-   `index.js` dosyasındaki `apiKey` değişkenini kendi API anahtarınızla güncelleyin:
+### Hava Durumu Sonuçları
+
+Arama yapıldığında, hava durumu detayları, simgeler ve hava durumu bilgileri görüntülenir.
+
+![Ekran görüntüsü 2024-08-15 122017](https://github.com/user-attachments/assets/b3b65783-0099-408b-8955-9c65a4902776)
+![Ekran görüntüsü 2024-08-15 122311](https://github.com/user-attachments/assets/2334a685-91a4-41a1-80c9-e90ec12ae20f)
+
+## API Anahtarı
+
+Uygulamanın çalışabilmesi için OpenWeather API anahtarına ihtiyacınız var. Kendi API anahtarınızı almak için şu adımları takip edin:
+
+1. [OpenWeather API Anahtarları Sayfasına](https://openweathermap.org/api_keys) gidin.
+2. Kayıt olun veya giriş yapın.
+3. API anahtarınızı oluşturun ve kopyalayın.
+4. `index.js` dosyasındaki `apiKey` değişkenini kendi API anahtarınızla güncelleyin:
    ```javascript
    const apiKey = 'YOUR_API_KEY';
